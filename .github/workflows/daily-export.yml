@@ -1,0 +1,45 @@
+name: Daily Dalux export
+
+# Runs the BI export every morning and commits the CSVs back to the repo so
+# Power BI can refresh from the raw file URLs. Also runnable on demand.
+on:
+  schedule:
+    - cron: "0 5 * * *"      # 05:00 UTC daily (Power BI refresh should run AFTER this)
+  workflow_dispatch: {}        # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write              # needed to push the updated data/ folder
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the daily export
+        env:
+          # Store your sandbox key as a repo secret named DALUX_API_KEY.
+          # (If unset, the code falls back to the embedded sandbox key.)
+          DALUX_API_KEY: ${{ secrets.DALUX_API_KEY }}
+        run: python daily_export.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then
+            echo "No data changes today."
+          else
+            git commit -m "Daily Dalux export $(date -u +%Y-%m-%d)"
+            git push
+          fi
