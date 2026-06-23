@@ -125,10 +125,7 @@ class DaluxFMClient:
     # Embedded SANDBOX api key. This is a sandbox-only credential; do NOT commit
     # a production key here. `DaluxFMClient()` with no argument uses this key;
     # pass `api_key=...` (or set DALUX_API_KEY in code) to override.
-    DEFAULT_API_KEY = (
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
-        "eyJzdWIiOiJEYWx1eEZNIEFQSSIsImN1c3RvbWVySWQiOiJzbGtzX3NhbmRib3hfNzIyMTFhNTlmYTk4NDU5Nzk1NDYxMzhhMDY2MGQ4ZjkiLCJndWlkIjoiZDVhNGM1YjEtMWZkYS00ODgzLWI3ZmItZDk5MTBmMWFkNzNlIiwibmJmIjoxNzgxMzgwODI3LCJleHAiOjE3ODM5NzI4MjcsImlhdCI6MTc4MTM4MDgyN30."
-        "Hqc6yCtA6gs7dvuqmCcQPAfyobntysAMp8HF3RFDFDg"
+    
     )
 
     # Dalux's documented hard cap on page size.
