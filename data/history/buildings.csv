@@ -19,3 +19,7 @@ export_date,Building ID,Name,Estate ID,Road,Number,Zip,City,Owned,Gross area,Net
 2026-06-22,1003,Test RVT,2,Jægersborg Alle,99,2820,Gentofte,False,0.0,0.0,2026-05-20 06:43:56
 2026-06-22,1002,test af BIM,2,Bernstorff Slot,1,2820,Gentofte,False,0.0,24.575,2026-05-05 13:42:58
 2026-06-22,2,Test,2,H.C. Andersens Boulevard,4,1553,København,True,0.0,0.0,2026-03-17 13:17:02
+2026-06-23,1004,Hovedhuset,2,Jægersborg Alle,99,2820,Gentofte,False,0.0,0.0,2026-06-13 20:14:33
+2026-06-23,1003,Test RVT,2,Jægersborg Alle,99,2820,Gentofte,False,0.0,0.0,2026-05-20 06:43:56
+2026-06-23,1002,test af BIM,2,Bernstorff Slot,1,2820,Gentofte,False,0.0,24.575,2026-05-05 13:42:58
+2026-06-23,2,Test,2,H.C. Andersens Boulevard,4,1553,København,True,0.0,0.0,2026-03-17 13:17:02
