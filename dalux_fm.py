@@ -47,6 +47,7 @@ and are easy to override if Dalux bumps a version — see `Resource`.
 from __future__ import annotations
 
 import logging
+import os
 import time
 from typing import Any, Dict, Iterable, Iterator, List, Optional, Union
 from urllib.parse import urljoin
@@ -122,11 +123,11 @@ class DaluxFMClient:
     PROD_BASE_URL = "https://fm-api.dalux.com/api"
     STAGE_BASE_URL = "https://fm-stage-api.dalux.com/api"
 
-    # Embedded SANDBOX api key. This is a sandbox-only credential; do NOT commit
-    # a production key here. `DaluxFMClient()` with no argument uses this key;
-    # pass `api_key=...` (or set DALUX_API_KEY in code) to override.
-    
-    )
+    # API key resolution order: explicit `api_key=` arg -> DALUX_API_KEY env var
+    # -> DEFAULT_API_KEY below. Keep DEFAULT_API_KEY empty in committed code and
+    # provide the key via the DALUX_API_KEY environment variable (locally or as a
+    # CI secret) so no credential is ever committed.
+    DEFAULT_API_KEY = ""
 
     # Dalux's documented hard cap on page size.
     MAX_LIMIT = 100
@@ -143,9 +144,11 @@ class DaluxFMClient:
         session: Optional[requests.Session] = None,
         user_agent: str = "dalux-fm-python/1.0",
     ):
-        api_key = api_key or self.DEFAULT_API_KEY
+        api_key = api_key or os.environ.get("DALUX_API_KEY") or self.DEFAULT_API_KEY
         if not api_key:
-            raise ValueError("api_key is required")
+            raise ValueError(
+                "No API key. Pass api_key=... or set the DALUX_API_KEY environment variable."
+            )
         self.api_key = api_key
         self.base_url = (base_url or (self.STAGE_BASE_URL if stage else self.PROD_BASE_URL)).rstrip("/")
         self.timeout = timeout
