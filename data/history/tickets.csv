@@ -19,3 +19,5 @@ export_date,Ticket ID,Number,Topic,Status,Buildings,Reporter,Description,Created
 2026-06-26,1,1015,Andet,New,Test,api@example.com,API test ticket created via the Dalux FM API,2026-06-13 20:23:44,2026-06-13 20:23:45
 2026-06-27,2,1016,Andet,Started,test af BIM,api@example.com,"API test ticket on test BIM building, assigned to API Test team",2026-06-13 20:39:05,2026-06-13 20:46:07
 2026-06-27,1,1015,Andet,New,Test,api@example.com,API test ticket created via the Dalux FM API,2026-06-13 20:23:44,2026-06-13 20:23:45
+2026-06-28,2,1016,Andet,Started,test af BIM,api@example.com,"API test ticket on test BIM building, assigned to API Test team",2026-06-13 20:39:05,2026-06-13 20:46:07
+2026-06-28,1,1015,Andet,New,Test,api@example.com,API test ticket created via the Dalux FM API,2026-06-13 20:23:44,2026-06-13 20:23:45
