@@ -155,3 +155,27 @@ export_date,Building ID,Name,Estate ID,Road,Number,Zip,City,Owned,Gross area,Net
 2026-07-01,1003,Test RVT,2,Jægersborg Alle,99,2820,Gentofte,False,0.0,0.0,2026-05-20 06:43:56
 2026-07-01,1002,test af BIM,2,Bernstorff Slot,1,2820,Gentofte,False,0.0,24.575,2026-05-05 13:42:58
 2026-07-01,2,Test,2,H.C. Andersens Boulevard,4,1553,København,True,0.0,0.0,2026-03-17 13:17:02
+2026-07-02,1011,BV03 Søndre Krudtmagasin,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:06:59
+2026-07-02,1010,BV02 Nordre Krudtmagasin,1002,,,,København,False,0.0,0.0,2026-06-26 11:06:15
+2026-07-02,1009,BV01 Søminestation,1002,,,,København,False,0.0,0.0,2026-06-26 11:05:33
+2026-07-02,1008,03 Kassemat,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:04:52
+2026-07-02,1007,02 Søndre Kasernebygning,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:04:03
+2026-07-02,1006,01 Nordre Kasernebygning,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:03:42
+2026-07-02,1005,00 Udeareal: Søfortet Trekroner,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1012,BV04 Nordre Magasin 1,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1013,BV05 Søndre Magasin 1,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1014,BV06 Nordre Magasin 2,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1015,BV07 Søndre magasin 2,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1016,BV08 Hegnsmur Nord,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1017,BV09 Hegnsmur Syd,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1018,BV10 Kongetrappe,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1019,BV11 Nordre Sømærke,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1020,BV12 Søndre Sømærke,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1021,BV13 Nordre face,1002,,,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1022,BV14 Søndre face,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1023,BV15 Flydebro,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1024,BV16 Caponere,1002,Trekroner,1,,København,False,0.0,0.0,2026-06-26 11:02:35
+2026-07-02,1004,Hovedhuset,2,Jægersborg Alle,99,2820,Gentofte,False,0.0,0.0,2026-06-13 20:14:33
+2026-07-02,1003,Test RVT,2,Jægersborg Alle,99,2820,Gentofte,False,0.0,0.0,2026-05-20 06:43:56
+2026-07-02,1002,test af BIM,2,Bernstorff Slot,1,2820,Gentofte,False,0.0,24.575,2026-05-05 13:42:58
+2026-07-02,2,Test,2,H.C. Andersens Boulevard,4,1553,København,True,0.0,0.0,2026-03-17 13:17:02
